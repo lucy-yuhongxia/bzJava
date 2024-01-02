@@ -5,8 +5,8 @@ public class BallGame  extends JFrame{
     Image ball = Toolkit.getDefaultToolkit().getImage("images/ball.png");
     Image desk = Toolkit.getDefaultToolkit().getImage("images/desk.png");
 
-    double x = 20;
-    double y = 20;
+    double x = 70;
+    double y = 70;
 
     double degree = 3.14/3; // 弧度 3.14 = 180degree, so 60 degree
 
@@ -21,11 +21,11 @@ public class BallGame  extends JFrame{
         y = y + 10 * Math.sin(degree);
 
         // 碰到上下边界
-        if (y>501 || y<0){
+        if (y>501-60|| y<60){
             degree = - degree;
         }
         // 碰到左右边界
-        if (x>856 || x<0){
+        if (x>856-60 || x<60){
             degree = 3.14-degree;
         }
     }
