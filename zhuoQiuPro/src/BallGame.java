@@ -8,8 +8,6 @@ public class BallGame  extends JFrame{
     double x = 20;
     double y = 20;
 
-    boolean right = true; // control the ball's  vertical direction
-
     double degree = 3.14/3; // 弧度 3.14 = 180degree, so 60 degree
 
 
